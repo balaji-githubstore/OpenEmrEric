@@ -43,8 +43,7 @@ Verify_Add_Patient_Template
     Select Frame    //iframe[@id='modalframe']
     Click Element    //input[@value='Confirm Create New Patient']
     Unselect Frame   
-    
-                     
+      
     ${message}    Handle Alert    timeout=30s
     Should Contain    ${message}    ${expectedalerttext}  
     
